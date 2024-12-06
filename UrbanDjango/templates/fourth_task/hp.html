@@ -1,16 +1,4 @@
 {% extends 'menu.html' %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Мой магазин</title>
-</head>
-<body>
-    {% block pagename %}<h1>Главная страница</h1>{% endblock %}
-
-    {% block menu %}
-        {{ block.super }}
-    {% endblock %}
-
-</body>
-</html>
+{% block pagename%}<h1>Главная страница</h1>{% endblock %}
+{% block menu %}{{ block.super }}{% endblock %}
+{% block content %}{% endblock %}
